@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
-	const timeline = new Timeline(document.querySelector('.timeline'), {
-		start: 0,
-		end: 100,
-		values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
-	})
+	const deviceWid = window.innerWidth
+	console.log(deviceWid)
+	if (deviceWid < 768) {
+		alert('このサイトはPC向けに作成されています、携帯は見えるけど見え難いです')
+	}
 })
